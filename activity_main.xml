@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.android.amiburnout.MainActivity">
+
+        <LinearLayout
+            android:id="@+id/Question_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!--Question 1-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="1."
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Question1"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/radio_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Question_one"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="24dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radio_group1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_1_Never"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked1"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerNever"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_1_Sometimes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked1"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerSometimes"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_1_Often"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked1"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerOften"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_1_AllTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked1"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerAllTime"
+                    android:textSize="24sp" />
+            </RadioGroup>
+        </LinearLayout>
+        <!-- QUestion 2-->
+        <LinearLayout
+            android:id="@+id/Question_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_one"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="2."
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Question2"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/radio_Two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Question_two"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="24dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radio_group2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_2_Never"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked2"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerNever"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_2_Sometimes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked2"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerSometimes"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_2_Often"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked2"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerOften"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_2_AllTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked2"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerAllTime"
+                    android:textSize="24sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Question_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_Two"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="3. "
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Question3"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/radio_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Question_three"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="24dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radio_group3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="oneRadioButtonClicked3"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_3_Never"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked3"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerNever"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_3_Sometimes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked3"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerSometimes"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_3_Often"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked3"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerOften"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_3_AllTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked3"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerAllTime"
+                    android:textSize="24sp" />
+            </RadioGroup>
+        </LinearLayout>
+        <!--Question 4-->
+        <LinearLayout
+            android:id="@+id/Question_Four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_three"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="4. "
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Question4"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/radio_Four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Question_Four"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="24dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radio_group4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_4_Never"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked4"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerNever"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_4_Sometimes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked4"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerSometimes"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_4_Often"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked4"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerOften"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_4_AllTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked4"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerAllTime"
+                    android:textSize="24sp" />
+            </RadioGroup>
+        </LinearLayout>
+        <!--QUestion 5-->
+        <LinearLayout
+            android:id="@+id/Question_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_Four"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="5. "
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Question5"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/radio_Five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Question_five"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="24dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radio_group5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_5_Never"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked5"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerNever"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_5_Sometimes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked5"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerSometimes"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_5_Often"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked5"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerOften"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_5_AllTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked5"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerAllTime"
+                    android:textSize="24sp" />
+            </RadioGroup>
+        </LinearLayout>
+        <!-- Question 6-->
+        <LinearLayout
+            android:id="@+id/Question_Six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_Five"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="6. "
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Question6"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/radio_Six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Question_Six"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="24dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radio_group6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_6_AllTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked6"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerAllTime"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_6_Often"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked6"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerOften"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_6_Sometimes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked6"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerSometimes"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_6_Never"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked6"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerNever"
+                    android:textSize="24sp" />
+
+            </RadioGroup>
+            <!-- Question 7-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Question_Seven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_Six"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="7. "
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Question7"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/radio_Seven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Question_Seven"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="24dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radio_group7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_7_AllTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked7"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerAllTime"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_7_Often"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked7"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerOften"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_7_Sometimes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked7"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerSometimes"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_7_Never"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked7"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerNever"
+                    android:textSize="24sp" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Question_Eight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_Seven"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="8. "
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Question8"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/radio_Eight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Question_Eight"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="24dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radio_group8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_8_AllTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked8"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerAllTime"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_8_Often"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked8"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerOften"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_8_Sometimes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked8"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerSometimes"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_8_Never"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked8"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerNever"
+                    android:textSize="24sp" />
+            </RadioGroup>
+        </LinearLayout>
+        <!--Question 9-->
+        <LinearLayout
+            android:id="@+id/Question_Nine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_Eight"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="9. "
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Question9"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/radio_Nine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Question_Nine"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="24dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radio_group9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_9_Never"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked9"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerNever"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_9_Sometimes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked9"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerSometimes"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_9_Often"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked9"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerOften"
+                    android:textSize="24sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_9_AllTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="oneRadioButtonClicked9"
+                    android:paddingLeft="24dp"
+                    android:text="@string/AnswerAllTime"
+                    android:textSize="24sp" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio_Nine"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:onClick="submitAnswer"
+                android:text="@string/Button" />
+
+            <TextView
+                android:id="@+id/Message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Message"
+                android:textColor="@android:color/black"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

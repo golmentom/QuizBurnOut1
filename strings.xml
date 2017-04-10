@@ -1,0 +1,31 @@
+<resources>
+<string name="app_name" translatable="false">Am I Burnout</string>
+
+<!-- XML File-->
+<!--Questions-->
+<string name="Question1" translatable="false">I feel tired and exhausted</string>
+<string name="Question2" translatable="false">I feel badly among my colleagues at work</string>
+<string name="Question3" translatable="false">Too much is expected of me</string>
+<string name="Question4" translatable="false">I feel alienated</string>
+<string name="Question5" translatable="false">I can not concentrate</string>
+<string name="Question6" translatable="false">I feel calm and emotionally stable</string>
+<string name="Question7" translatable="false">I feel appreciated</string>
+<string name="Question8" translatable="false">I have a sense that what I do is important</string>
+<string name="Question9" translatable="false">My head hurts and I have trouble falling asleep</string>
+<!-- Buttons-->
+<string name="Button" translatable="false">Check Answer</string>
+<string name="AnswerAllTime" translatable="false">All the time</string>
+<string name="AnswerOften" translatable="false">Often</string>
+<string name="AnswerSometimes" translatable="false">Sometimes</string>
+<string name="AnswerNever" translatable="false">Never</string>
+<string name="Message" translatable="false">Summary</string>
+
+<!-- Java File-->
+
+<string name="YouGot" translatable="false">"You got "</string>
+<string name="Points1" translatable="false">" points. There is no doubt, the stateyou were"</string>
+<string name="Points1Final" translatable="false"> in is a classic example of professional burnout.</string>
+<string name="Points2" translatable="false">" points. You feel at work fulfilled and needed."</string>
+<string name="Points2Final" translatable="false">" You can realistically assess your capabilities and you can easily deal with the challenges of your professional and personal life."</string>
+<string name="Points3" translatable="false">" points. Work is your passion, you feel happy and fulfilled in every way."</string>
+</resources>
